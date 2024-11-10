@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px 100px 50px 100px;
+  background-color: rgba(255, 144, 14, 0.1);
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav>h1 {
+  color: #131313;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav>ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav>ul>li {
+  list-style: none;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #424242;
+  font-weight: 500;
+}
+
+.banner {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+
+}
+
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.banner-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.primary-btn {
+  background-color: rgba(255, 144, 14, 1);
+  padding: 17px 35px;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main {
+  margin: 50px auto;
+  max-width: 1100px;
+}
+
+.our-features {
+  margin: 0 auto;
+  max-width: 950px;
+  display: flex;
+  gap: 2rem;
+}
+
+.left-col {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: .7rem;
+  flex-basis: 50%;
+
+}
+
+.left-col img {
+  width: 250px;
+}
+
+.right-col {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .7rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width:576px) {
+  header.header {
+    padding: 20px 10px 50px 10px;
+    gap: 80px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1.site-title {
+    font-size: 2.8rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  h2.banner-title {
+    font-size: 2rem;
+  }
+
+  button.primary-btn {
+    font-size: 1.05rem;
+  }
+
+  img.banner-image {
+    width: 100%;
+  }
+
+  .our-features {
+    width: 100%;
+  }
+
+  .left-col {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-col img {
+    width: 100%;
+  }
+}
